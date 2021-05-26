@@ -20,11 +20,13 @@ html {
 
 .super__wrapper {
     display: flex;
+    position: relative;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    max-width: 1440px;
+    max-width: 1200px;
     margin: 0 auto;
+    height: fit-content;
 }
 
 .photo-info-side,
@@ -63,19 +65,25 @@ html {
     display: flex;
     justify-content: space-between;
     flex-direction: row;
+    flex-wrap: wrap;
     position: fixed;
     z-index: 2;
     top: 0;
     left: 0;
     background: rgb(255, 118, 118);
-    height: 50px;
+    height: fit-content;
     width: 100%;
     box-shadow: 0px 5px 5px black;
 }
 
+.brand {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+}
+
 .brand img {
-    margin-top: 1px;
-    margin-left: 30px;
+    margin: 0 auto;
     width: 200px;
     height: 47px;
 }
@@ -92,6 +100,7 @@ html {
 .header__nav__side {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     margin-right: 10px;
 }
 
@@ -147,7 +156,7 @@ h1 {
     align-self: center;
     font-weight: 700;
     margin-left: 100px;
-    font-size: 70px;
+    font-size: 40px;
     margin-bottom: 50px;
     text-shadow: -3px 3px 3px rgba(255, 0, 0, 0.478);
     
@@ -158,10 +167,10 @@ h1 {
     justify-content: center;
     flex-direction: row;
     column-gap: 50px;
-    margin-top: 20px;
-    margin-bottom: 80px;
+    margin-top: 50px;
+    margin-bottom: 0px;
     width: 100%;
-    height: 650px;
+    height: 550px;
     align-items: center;
 }
 
@@ -186,15 +195,14 @@ h2 {
 h3 {
     font-family: 'DotGothic16', sans-serif;
     font-family: 'Orbitron', sans-serif;
-    font-size: 23px;
+    font-size: 18px;
     text-align: left;
     text-shadow: -1px 2px 2px rgb(255, 121, 121); 
 }
 
 .photo__content__container img {
-    margin-left: 60px;
-    width: 350px;
-    height: 510px;
+    margin-left: 10px;
+    height: 450px;
     border: 10px outset rgb(255, 119, 119);
     border-radius: 20px;
     background-color: rgb(0, 0, 0);
@@ -209,11 +217,11 @@ h3 {
     text-shadow: -2px 2px 1px rgba(50, 50, 50, 0.961);
     border-radius: 10px;
     text-align: center;
-    font-size: 40px;
-    margin-top: 500px;
+    font-size: 25px;
+    margin-top: 450px;
     margin-left: 120px;
-    width: 600px;
-    height: 60px;
+    width: 400px;
+    height: 42px;
     color: rgb(0, 0, 0);
     background: rgb(255, 120, 120);
     border: 3px ridge rgb(0, 0, 0);
@@ -228,8 +236,8 @@ h3 {
     border-bottom: none;
     height: 300px;
     width: 630px;
-    margin-left: -20px;
-    margin-bottom: 70px;
+    margin-left: -180px;
+    margin-bottom: 100px;
 } 
 
 #highmark {
@@ -255,7 +263,7 @@ h3 {
 #version {
     font-family: 'DotGothic16', sans-serif;
     font-family: 'Orbitron', sans-serif;
-    font-size: 14px;
+    font-size: 12px;
 }
 
 
@@ -268,25 +276,25 @@ h3 {
     flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
-    height: 500px;
+    height: fit-content;
     width: 100%;
-    margin: 20px;
     margin-left: 0px;
 }
 
 .mirror__text__cell,
 .mirror__text__cell1 {
-    width: 950px;
-    height: 450px;
+    width: 650px;
+    height: fit-content;
     text-align: center;
     border: 10px groove rgba(255, 0, 0, 0.499);
-    font-size: 22px;
+    font-size: 17px;
     font-weight: 600;
     text-shadow: -3px 3px 1px rgba(255, 0, 0, 0.354);
     font-family: 'Stick', sans-serif;
 }
 
 .mirror__text__cell {
+    margin-bottom: 20px;
     padding-right: 30px;
     border-top: none;
     border-left: none;
@@ -300,10 +308,14 @@ h3 {
     border-right: none;
 }
 
+#p__mirror {
+    padding-left: 20px;
+}
+
 
 .mirror__image__cell img {
-    height: 400px;
-    width: 400px;
+    height: 300px;
+    width: 300px;
 }
 
 #ucode-link {
@@ -313,7 +325,8 @@ h3 {
 }
 
 #ucode-link:hover {
-    font-size: 27px;
+    font-size: 20px;
+    text-shadow: 0px 0px 5px;
     transition: 300ms ease;
 }
 
@@ -321,7 +334,7 @@ h3 {
     text-decoration: none;
     color: red;
     text-transform: uppercase;
-    font-size: 25px;
+    font-size: 20px;
 }
 
 
@@ -333,22 +346,23 @@ h3 {
     flex-wrap: nowrap;
     justify-content: space-evenly;
     align-items: center;
+    padding-top: 70px;
     width: 100%;
-    height: 520px;
+    height: fit-content;
 }
 
 .project__card {
     justify-content: center;
     align-content: center;
-    height: 300px;
-    width: 350px;
+    height: 220px;
+    width: 250px;
 }
 
 .flip-card {
     background-color: transparent;
     justify-content: center;
-    width: 355px;
-    height: 255px;
+    width: 255px;
+    height: 175px;
     perspective: 1000px;
     border-radius: 20px;
 }
@@ -391,14 +405,14 @@ h3 {
   }
 
 .flip-card-front img {
-    height: 246px;
-    width: 346px;
+    height: 166px;
+    width: 246px;
     border-radius: 15px;
   }
 
 #project-card-info {
     font-family: 'Stick', sans-serif;
-    font-size: 25px;
+    font-size: 20px;
 }
 
 /*Contact Form container with Hire button*/
@@ -539,7 +553,7 @@ form {
     padding-top: 7px;
     margin: 5px;
     border: rgb(109, 109, 109) 2px solid;
-    border-radius: 80%;
+    border-radius: 50px;
     text-align: center;
     cursor: pointer;
     transition: 0.3s ease-in-out;
@@ -642,13 +656,13 @@ form {
 .footer__content__container {
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     text-align: center;
     justify-content: space-evenly;
     width: 100%;
-    height: 220px;
-    margin-top: 60px;
-    margin-bottom: 80px;
+    height: fit-content;
+    margin-top: 20px;
+    margin-bottom: 50px;
     background: whitesmoke;
     font-family: 'Stick', sans-serif;
 }
@@ -660,8 +674,9 @@ form {
     display: flex;
     flex-wrap: wrap;
     margin-top: 10px;
-    height: 100%;
+    height: fit-content;
     width: 250px;
+    margin: 10px;
 }
 
 .linked-in,
@@ -672,9 +687,9 @@ form {
     display: flex;
     text-transform: uppercase;
     height: 36px;
-    width: 100%;
+    width: 180px;
     font-family: 'Stick', sans-serif;
-    font-size: 25px;
+    font-size: 18px;
     font-weight: 600;
     color: black;
     margin: 2px;
@@ -711,7 +726,7 @@ img {
 {
     transition: 0.4s ease;
     text-shadow: 0px 0px 5px red;
-    font-size: 28px;
+    font-size: 20px;
 }
 
 
@@ -722,20 +737,21 @@ img {
     flex-direction: column;
     justify-content: center;
     align-content: center;
+    padding-top: 30px;
     font-family: 'Stick', sans-serif;
 }
 
 .phone-num,
 .mail-adr {
     margin-top: 0px;
-    font-size: 25px;
+    font-size: 18px;
     font-weight: 600;
 }
 
 .phone-num,
 .mail-adr {
     margin-top: 0px;
-    font-size: 25px;
+    font-size: 19px;
     font-weight: 900;
 }
 
@@ -869,14 +885,16 @@ img {
 
 .rights__media__container {
     display: flex;
+    position: relative;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
     text-align: center;
     padding-top: -5px;
-    margin-top: 20px;
+    margin-top: 30px;
+    margin-bottom: 30px;
     width: 100%;
-    height: 100px;
+    height: fit-content;
     font-family: 'Stick', sans-serif;
     color: black;
     background: whitesmoke;
@@ -894,26 +912,38 @@ img {
     text-shadow: 0px 3px 2px rgba(255, 0, 0, 0.499);
 }
 
-@media screen and (max-width: 1200px) {
+footer {
+    position: relative;
+    bottom: 0px;
+}
+
+@media screen and (max-width: 1024px) {
     body {
         background: green;
     }
-}
-
-@media screen and (max-width: 900px) {
-    body {
-        background: red;
+    .header__container {
+        flex-direction: row;
+        justify-content: center;
+        gap: 30px;
     }
+    .header__nav__side {
+        margin: 30px 30px 30px 30px;
+    }
+    .brand {
+        width: 350px;
+        height: 50px;
+        margin: 0 auto;
+        justify-content: center;
+        top: 20px;
+    }
+    
 }
 
 @media screen and (max-width: 768px) {
     body {
-        background: rgb(0, 13, 128);
+        background: red;
     }
-}
-
-@media screen and (max-width: 320px) {
-    body {
-        background: rgb(2, 217, 255);
+    .brand {
+        margin-top: 50px;
     }
 }
