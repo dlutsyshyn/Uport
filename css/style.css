@@ -88,6 +88,10 @@ html {
     height: 47px;
 }
 
+.brand__mobile {
+    display: none;
+}
+
 .header__logoside {
     display: flex;
     flex-direction: row;
@@ -427,14 +431,16 @@ h3 {
     justify-content: space-evenly;
     font-family: 'Stick', sans-serif;
     width: 100%;
-    height: 420px;
+    height: fit-content;
 }
 
 .hire-me__button__section,
 .user-select__form__section {
     display: flex;
     flex-direction: row;
-    width: 40%;
+    justify-content: center;
+    margin: 0 auto;
+    width: 550px;
     height: 100%;
 }
 
@@ -919,9 +925,6 @@ footer {
 }
 
 @media screen and (max-width: 1024px) {
-    body {
-        background: rgb(179, 179, 179);
-    }
     /*Header teblet media*/
     .super__wrapper {
 
@@ -987,19 +990,77 @@ footer {
     .projects__content__container {
         display: none;
     }
+    .contact__form__container {
+        flex-direction: column;
+    }
 }
 
 @media screen and (max-width: 768px) {
-    body {
-        background: red;
-    }
     .super__wrapper {
-        margin-top: 200px;
+        margin-top: 380px;
     }
     .header__nav__side {
         margin: 60px 30px 20px 30px;
     }
+    .nav__button {
+        padding: 0 0 0 10px;
+    }
     .brand {
+        display: none;
         margin-top: 50px;
     }
+    .header__logoside {
+        margin-top: 10px;
+        height: 200px;
+    }
+    .brand__mobile {
+        margin: 40px 20px 50px 20px;
+        display: flex;
+        justify-content: center;
+        margin: 0 auto;
+        width: 200px;
+        height: 250px;
+        margin-top: 20px;
+    }
+    .brand__mobile img {
+        width: 200px;
+    }
+    .photo__content__container::before {
+        width: 320px;
+        font-size: 20px;
+        height: 35px;
+        margin: 565px 0px 0px ;
+    }
+    .hire-me__button__section,
+    .user-select__form__section {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 0 auto;
+    width: 350px;
+    height: 100%;
+    }
+    .firstrow {
+        font-size: 18px;
+    }
+    .firstrow label{
+        padding: 13px 5px 0px;
+        font-size: 18px;
+    }
+    .social__info {
+        justify-content: center;
+    }
+    .hire-me__button__section {
+        flex-direction: column;
+    }
+    .rights__media__container {
+        flex-direction: column;
+    }
 }
+
+@media screen and (max-width: 466px) {
+    .super__wrapper {
+        margin-top: 440px;
+    }
+}
+
