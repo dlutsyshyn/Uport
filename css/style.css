@@ -294,7 +294,7 @@ h3 {
     border: 10px groove rgba(255, 0, 0, 0.499);
     font-size: 17px;
     font-weight: 600;
-    text-shadow: -3px 3px 1px rgba(255, 0, 0, 0.354);
+    text-shadow: -1px 1px 1px rgba(255, 0, 0, 0.354);
     font-family: 'Stick', sans-serif;
 }
 
