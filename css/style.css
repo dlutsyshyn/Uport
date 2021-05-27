@@ -1062,5 +1062,8 @@ footer {
     .super__wrapper {
         margin-top: 440px;
     }
+    .body {
+        background: chocolate;
+    }
 }
 
