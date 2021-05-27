@@ -974,7 +974,7 @@ img {
         height: 580px;
     }
     .photo__content__container::before {
-        margin: 565px -40px 0px ;
+        margin: 565px -40px 0px -57px;
     }
     h2 {
         margin: 0px 0px;
@@ -1059,7 +1059,7 @@ img {
         width: 320px;
         font-size: 20px;
         height: 35px;
-        margin: 565px 0px 0px ;
+        margin: 565px 0px 0px -16px;
     }
     .hire-me__button__section,
     .user-select__form__section {
